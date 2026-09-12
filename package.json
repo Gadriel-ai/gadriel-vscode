@@ -1,0 +1,70 @@
+{
+  "name": "gadriel-security-harness",
+  "displayName": "Gadriel AI Security Harness",
+  "description": "Security scanning for the code your AI writes: SAST, secrets, dependencies, containers, config, and OWASP LLM Top 10. Registers the Gadriel MCP server and adds a scan command.",
+  "version": "1.4.0",
+  "publisher": "gadriel",
+  "license": "Apache-2.0",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "AI",
+    "Linters",
+    "Other"
+  ],
+  "keywords": [
+    "security",
+    "sast",
+    "secrets",
+    "owasp",
+    "mcp",
+    "ai-security"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gadriel-ai/gadriel-vscode"
+  },
+  "homepage": "https://gadriel.ai",
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "gadriel.mcp",
+        "label": "Gadriel Security Harness"
+      }
+    ],
+    "commands": [
+      {
+        "command": "gadriel.scan",
+        "title": "Gadriel: Scan Repository",
+        "category": "Gadriel"
+      }
+    ],
+    "configuration": {
+      "title": "Gadriel",
+      "properties": {
+        "gadriel.command": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the gadriel binary. Leave empty to run via `npx -y gadriel@1.4.0` (requires Node), or set to an absolute path / a `gadriel` on PATH."
+        },
+        "gadriel.version": {
+          "type": "string",
+          "default": "1.4.0",
+          "description": "gadriel npm version used when running via npx."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.101.0",
+    "typescript": "^5.6.0"
+  }
+}
