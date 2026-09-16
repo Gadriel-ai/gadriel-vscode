@@ -12,7 +12,7 @@ configuration, including AI-specific risks such as the OWASP LLM Top 10, with
 ## Requirements
 
 The `gadriel` scanner binary. By default the extension runs it via
-`npx -y gadriel@1.4.0` (needs Node.js). Or set **`gadriel.command`** to an
+`npx -y gadriel@1.4.1` (needs Node.js). Or set **`gadriel.command`** to an
 absolute path / a `gadriel` already on PATH (e.g. `npm install -g gadriel`).
 
 ## Use
@@ -25,7 +25,7 @@ absolute path / a `gadriel` already on PATH (e.g. `npm install -g gadriel`).
 ## Settings
 
 - `gadriel.command` — path to the gadriel binary (default: run via npx).
-- `gadriel.version` — npm version used with npx (default `1.4.0`).
+- `gadriel.version` — npm version used with npx (default `1.4.1`).
 
 ## Data
 
