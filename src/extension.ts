@@ -9,7 +9,7 @@ function resolveLauncher(): { command: string; baseArgs: string[] } {
   if (explicit) {
     return { command: explicit, baseArgs: [] };
   }
-  const version = (cfg.get<string>('version') || '1.4.0').trim() || '1.4.0';
+  const version = (cfg.get<string>('version') || '1.4.1').trim() || '1.4.1';
   return { command: 'npx', baseArgs: ['-y', `gadriel@${version}`] };
 }
 
@@ -27,7 +27,7 @@ export function activate(context: vscode.ExtensionContext): void {
           command,
           [...baseArgs, 'code', 'mcp'],
           {},
-          '1.4.0'
+          '1.4.1'
         )
       ];
     },

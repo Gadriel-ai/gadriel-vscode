@@ -2,7 +2,7 @@
   "name": "gadriel-security-harness",
   "displayName": "Gadriel AI Security Harness",
   "description": "Security scanning for the code your AI writes: SAST, secrets, dependencies, containers, config, and OWASP LLM Top 10. Registers the Gadriel MCP server and adds a scan command.",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "publisher": "gadriel",
   "license": "Apache-2.0",
   "engines": {
@@ -48,11 +48,11 @@
         "gadriel.command": {
           "type": "string",
           "default": "",
-          "description": "Path to the gadriel binary. Leave empty to run via `npx -y gadriel@1.4.0` (requires Node), or set to an absolute path / a `gadriel` on PATH."
+          "description": "Path to the gadriel binary. Leave empty to run via `npx -y gadriel@1.4.1` (requires Node), or set to an absolute path / a `gadriel` on PATH."
         },
         "gadriel.version": {
           "type": "string",
-          "default": "1.4.0",
+          "default": "1.4.1",
           "description": "gadriel npm version used when running via npx."
         }
       }
