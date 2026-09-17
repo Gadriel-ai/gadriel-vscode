@@ -4,7 +4,7 @@
   "description": "Security scanning for the code your AI writes: SAST, secrets, dependencies, containers, config, and OWASP LLM Top 10. Registers the Gadriel MCP server and adds a scan command.",
   "version": "1.4.1",
   "icon": "icon.png",
-  "publisher": "gadriel",
+  "publisher": "Gadriel",
   "license": "Apache-2.0",
   "engines": {
     "vscode": "^1.101.0"
