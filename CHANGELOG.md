@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.5.0
+- Bump bundled gadriel npx pin to 1.5.0.
+
 ## 1.4.1
 - Bump bundled gadriel npx pin to 1.4.1.
 
