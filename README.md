@@ -1,5 +1,7 @@
 # Gadriel AI Security Harness — VS Code
 
+**[Product Overview](https://gadriel.ai/code-security)** · **[Documentation](https://gadriel.ai/docs)** · **[MCP Tools Reference](https://gadriel.ai/docs/gca/mcp-tools-reference.html)** · **[SAST Benchmarks](https://gadriel.ai/blog/gadriel-vs-semgrep.html)**
+
 Security scanning for the code your AI writes. This extension registers the
 **Gadriel MCP server** so GitHub Copilot (and other MCP-aware chat) can use
 Gadriel's security tools with no config editing, and adds a **Gadriel: Scan
